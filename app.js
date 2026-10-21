@@ -574,7 +574,7 @@ function renderLightbox() {
 
   $('#lbName').innerHTML = typeof m.age === 'number'
     ? `${m.name} <span class="age">${m.age}歳</span>` : `${m.name}`;
-  $('#lbLoc').textContent = known(m.location) ? m.location : '';
+  $('#lbLoc').textContent = known(m.location) && m.location !== PENDING ? m.location : '';
 
   // プロフィール項目：全員わかっている項目を上に同じ順で、個別にわかっている項目をその下に並べる（不明な項目は表示しない）
   const specsBox = document.querySelector('.specs');
