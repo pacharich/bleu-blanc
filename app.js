@@ -564,7 +564,7 @@ function renderLightbox() {
   const specsBox = document.querySelector('.specs');
   specsBox.innerHTML = '';
   const fields = specFields(m).filter(f => known(f.v));
-  const rows = [...COMMON_SPECS.map(l => fields.find(f => f.l === l)), ...fields.filter(f => !COMMON_SPECS.includes(f.l))];
+  const rows = [...COMMON_SPECS.map(l => fields.find(f => f.l === l)).filter(Boolean), ...fields.filter(f => !COMMON_SPECS.includes(f.l))];
   rows.forEach(f => {
     const d = document.createElement('div');
     d.className = 'spec';
