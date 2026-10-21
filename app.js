@@ -7,6 +7,7 @@
 
 const PLACEHOLDER = '情報待ち';
 const NA = '—';
+const PENDING = '確認中';   // プロフィール未着の項目（詳細画面では枠だけ表示、カードには出さない）
 
 // 出演可能日：全員 12/7〜9 の3日間対応可（ヒーロー部に共通表示）
 const AVAILABILITY = {};
@@ -72,7 +73,22 @@ const FEMALES = [
   },
   {
     "id": "hina",
-    "name": "ヒナ"
+    "name": "ヒナ",
+    "age": 26,
+    "height": "確認中",
+    "size": "確認中",
+    "shoe": "確認中",
+    "clothesSize": "確認中",
+    "location": "確認中",
+    "extra": [
+      [
+        "モデル歴",
+        "確認中"
+      ]
+    ],
+    "videos": [
+      "https://www.instagram.com/reel/DHvM8hOAtrs/"
+    ]
   },
   {
     "id": "nakamura",
@@ -425,7 +441,7 @@ function specFields(m) {
   return [...base, ...extras];
 }
 const COMMON_SPECS = specFields({}).map(f => f.l)
-  .filter(l => [...FEMALES, ...MALES].filter(m => known(m.height)).every(m => known((specFields(m).find(f => f.l === l) || {}).v)));
+  .filter(l => [...FEMALES, ...MALES].filter(m => known(m.height) && m.height !== PENDING).every(m => known((specFields(m).find(f => f.l === l) || {}).v)));
 
 // 番号ラベル（新婦役01／新郎役01）
 const numPrefix = () => currentTab === 'female' ? '新婦役' : '新郎役';
@@ -479,8 +495,8 @@ function buildCard(m, i, gender) {
         <span class="nm">${m.name}</span>
         ${known(m.age) ? `<span class="age">${ageDisp(m.age)}</span>` : ''}
       </div>
-      ${known(m.location) ? `<div class="card-loc">${m.location}</div>` : ''}
-      ${known(m.height) ? `<div class="card-stat">
+      ${known(m.location) && m.location !== PENDING ? `<div class="card-loc">${m.location}</div>` : ''}
+      ${known(m.height) && m.height !== PENDING ? `<div class="card-stat">
         <span><span class="l">身長</span>${heightDisp(m.height)}</span>
       </div>` : ''}
       ${m.cardNote ? `<div class="card-note">${m.cardNote}</div>` : ''}
