@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>モデル候補リスト｜ブルーブラン 様 ご提案資料</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=10211800">
+<style>@media (max-width: 900px){.brand-sub{display:none}}
+.hero{grid-template-columns:1fr}
+.hero-title .small{max-width:none}</style>
+</head>
+<body>
+
+<!-- ====== Nav ====== -->
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <span class="brand-mark">PashaRich<span class="brand-jp">パシャリッチ</span></span>
+      <span class="brand-sub">キャスティング提案書 ／ 2026年10月版</span>
+    </div>
+    <nav class="nav-links">
+      <a class="nav-link" href="#female"><span class="num">01</span>新婦役候補</a>
+      <a class="nav-link" href="#male"><span class="num">02</span>新郎役候補</a>
+    </nav>
+    <button class="nav-cta">
+      <span class="dot"></span>
+      ブルーブラン 様
+    </button>
+  </div>
+</header>
+
+<!-- ====== Hero ====== -->
+<section class="hero">
+  <div>
+    <p class="hero-eyebrow">キャスティング候補一覧 ／ ブルーブラン様（愛知県岡崎市） ／ 2026年10月版</p>
+    <h1 class="hero-title" style="font-size:clamp(36px,5vw,72px)">
+      モデル候補<br>リスト<br>
+      <span class="small">ブルーブラン 様（株式会社ブラス）<br>
+      案件名：ブルーブラン様　ウェディング広告撮影（会場フル撮影）<br>
+      撮影日程：2026年12月7日（月）※半日・8日（火）・9日（水）の3日間<br>
+      撮影場所：ブルーブラン（愛知県岡崎市）<br>
+      内容：新郎新婦のポーズ撮影（スチール＋動画）<br>
+      <span style="display:block;margin-top:12px;font-size:.82em;color:var(--accent);font-weight:600;">※本案件のモデルは全員、12/7〜9の3日間とも対応可能です（前泊・中日泊含む）。</span></span>
+    </h1>
+  </div>
+</section>
+
+<!-- ====== Models ====== -->
+<section class="section">
+  <div class="section-head" style="align-items:flex-end">
+    <div>
+      <div class="section-num">キャスティング候補一覧 ／ ブルーブラン様 ／ 2026年10月版</div>
+      <h2 class="section-title">モデル<em>候補</em></h2>
+    </div>
+    <div class="section-tail" id="countAll"></div>
+  </div>
+
+  <!-- 新婦役 -->
+  <div class="gender-block" id="female">
+    <div class="gender-head">
+      <span class="gender-badge">新婦役</span>
+      <span class="gender-count" id="countFemale"></span>
+    </div>
+    <div id="gridFemale" class="grid"></div>
+  </div>
+
+  <!-- 新郎役 -->
+  <div class="gender-block" id="male" style="margin-top:56px">
+    <div class="gender-head">
+      <span class="gender-badge">新郎役</span>
+      <span class="gender-count" id="countMale"></span>
+    </div>
+    <div id="gridMale" class="grid"></div>
+  </div>
+</section>
+
+<!-- ====== Footer ====== -->
+<footer>
+  <div class="foot">
+    <div>
+      <div class="foot-brand">PashaRich</div>
+      <p class="foot-tag">広告・Web・出版分野のキャスティングをワンストップでサポート。<br>
+      本提案資料は ブルーブラン 様向けに作成された機密資料です。</p>
+    </div>
+    <div class="foot-col">
+      <h4>案件</h4>
+      <p>ブルーブラン 様</p>
+      <p>キャスティング提案 2026</p>
+    </div>
+    <div class="foot-col" style="color:rgb(123,123,130);font-size:12.5px">
+      <h4>運営元</h4>
+      <p>株式会社ワールドチェンジアナリシス</p>
+    </div>
+    <div class="foot-col">
+      <h4>ステータス</h4>
+      <p style="color:var(--accent)">● 選考受付中</p>
+      <p>2026年10月版</p>
+      <p>機密資料</p>
+    </div>
+  </div>
+  <div class="foot-row">
+    <span>© 2026 PashaRich — ブルーブラン 様向け 機密提案資料</span>
+    <span>2026年10月</span>
+  </div>
+</footer>
+
+<!-- ====== Lightbox ====== -->
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <div class="lb-inner">
+    <div class="lb-top">
+      <div class="lb-id" id="lbId"><span class="accent">新婦役01</span></div>
+      <div class="lb-actions">
+        <button class="lb-close" id="lbClose" aria-label="閉じる">✕</button>
+      </div>
+    </div>
+    <div class="lb-body">
+      <div class="lb-gallery">
+        <div class="lb-main" id="lbMain"></div>
+        <div class="lb-strip" id="lbStrip"></div>
+      </div>
+      <div class="lb-info">
+        <div class="lb-name-row">
+          <h2 class="lb-name" id="lbName"></h2>
+          <p class="lb-loc" id="lbLoc"></p>
+        </div>
+
+        <div class="specs">
+        </div>
+
+        <!-- 出演可能日 -->
+        <div class="lb-schedule" id="lbSchedule">
+          <div class="lb-schedule-label">SCHEDULE</div>
+          <div class="lb-schedule-title">出演可能日</div>
+          <div class="lb-schedule-cards" id="lbScheduleCards"></div>
+        </div>
+
+        <!-- 実績 -->
+        <div class="lb-achievements" id="lbAchievements">
+          <div class="lb-ach-title" id="lbAchTitle">活動実績</div>
+          <ul class="lb-ach-list" id="lbAchList"></ul>
+        </div>
+
+        <div class="lb-actions-bottom">
+          <button class="lb-btn" id="lbPrev"><span style="font-family:var(--mono)">←</span> 前のモデル</button>
+          <button class="lb-btn" id="lbNext">次のモデル <span style="font-family:var(--mono)">→</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="lb-bottom">
+      <span class="lb-hint">操作：<kbd>←</kbd><kbd>→</kbd> モデル切替 ／ <kbd>↑</kbd><kbd>↓</kbd> 写真切替 ／ <kbd>Esc</kbd> 閉じる</span>
+      <span class="lb-hint">サムネイルをクリックで写真切替</span>
+    </div>
+  </div>
+</div>
+
+<script src="photos.js?v=10211800"></script>
+<script src="app.js?v=10211800"></script>
+</body>
+</html>
