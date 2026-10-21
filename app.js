@@ -418,7 +418,44 @@ const MALES = [
   },
   {
     "id": "ryosuke",
-    "name": "リョウスケ"
+    "name": "リョウスケ",
+    "age": "確認中",
+    "height": 173,
+    "size": "B 89cm / W 82cm / H 92cm",
+    "shoe": "26.5cm",
+    "location": "愛知県",
+    "extra": [
+      [
+        "備考",
+        "愛知県在住のため、宿泊不要（ご自宅から通いで対応可能）<br>愛知県内の結婚式場の広告出演歴：アニヴェルセル白壁（直近5年以内）"
+      ]
+    ],
+    "videos": [
+      "https://youtu.be/NANbDEwMmNg",
+      "https://youtu.be/wlPsSAdAjZE",
+      "https://youtu.be/tLxLMY2vomY"
+    ],
+    "achievementTitle": "主な出演実績",
+    "achievementSections": [
+      {
+        "title": "ブライダル",
+        "items": [
+          "ワタベウェディング、八芳園、アニヴェルセル江坂、ANAインターコンチネンタル石垣島、シェラトン鹿児島 ほか全国20か所以上"
+        ]
+      },
+      {
+        "title": "CM",
+        "items": [
+          "TOYOTA、SoftBank、YAMAHA、ヤクルト、subway ほか"
+        ]
+      },
+      {
+        "title": "広告",
+        "items": [
+          "docomo、shu uemura、THE NORTH FACE、converse、じゃらん ほか"
+        ]
+      }
+    ]
   }
 ];
 
@@ -493,7 +530,7 @@ function buildCard(m, i, gender) {
     <div class="card-body">
       <div class="card-name">
         <span class="nm">${m.name}</span>
-        ${known(m.age) ? `<span class="age">${ageDisp(m.age)}</span>` : ''}
+        ${known(m.age) && m.age !== PENDING ? `<span class="age">${ageDisp(m.age)}</span>` : ''}
       </div>
       ${known(m.location) && m.location !== PENDING ? `<div class="card-loc">${m.location}</div>` : ''}
       ${known(m.height) && m.height !== PENDING ? `<div class="card-stat">
