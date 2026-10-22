@@ -317,7 +317,7 @@ const FEMALES = [
   }
 ];
 
-// 新郎役（りょうま／ケビン／リョウスケ）
+// 新郎役（りょうま／リョウスケ／ケビン／ハヤト）
 const MALES = [
   {
     "id": "ryoma",
@@ -413,13 +413,9 @@ const MALES = [
     ]
   },
   {
-    "id": "kevin",
-    "name": "ケビン"
-  },
-  {
     "id": "ryosuke",
     "name": "リョウスケ",
-    "age": "確認中",
+    "age": 31,
     "height": 173,
     "size": "B 89cm / W 82cm / H 92cm",
     "shoe": "26.5cm",
@@ -427,7 +423,7 @@ const MALES = [
     "extra": [
       [
         "備考",
-        "愛知県在住のため、宿泊不要（ご自宅から通いで対応可能）<br>愛知県内の結婚式場の広告出演歴：アニヴェルセル白壁（直近5年以内）"
+        "愛知県在住のため、宿泊不要（ご自宅から通いで対応可能）<br>愛知県内の結婚式場の広告出演歴：<br>・アニヴェルセル白壁（直近5年以内）<br>・ビアンカーラ、クレールベイサイド（2021年11月ごろ撮影）"
       ]
     ],
     "videos": [
@@ -456,6 +452,39 @@ const MALES = [
         ]
       }
     ]
+  },
+  {
+    "id": "kevin",
+    "name": "ケビン",
+    "age": "確認中",
+    "height": 171,
+    "size": "B 88cm / W 70cm / H 確認中",
+    "shoe": "27cm（確認中）",
+    "location": "東京都",
+    "extra": [
+      [
+        "裄丈",
+        "71cm"
+      ]
+    ],
+    "achievementTitle": "主な出演実績",
+    "achievementSections": [
+      {
+        "title": "広告",
+        "items": [
+          "Nikon、LEVI'S、MIKIMOTO、資生堂、WTAPS、New Balance"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hayato",
+    "name": "ハヤト",
+    "age": "確認中",
+    "height": 180,
+    "size": "B 94cm / W 76cm / H 93cm",
+    "shoe": "27.5cm",
+    "location": "確認中"
   }
 ];
 
