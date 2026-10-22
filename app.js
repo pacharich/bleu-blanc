@@ -730,10 +730,12 @@ lb.addEventListener('click', e => { if (e.target === lb) closeLightbox(); });
 document.addEventListener('keydown', e => {
   if (!lb.classList.contains('open')) return;
   if (e.key === 'Escape') closeLightbox();
-  if (e.key === 'ArrowLeft')  moveModel(-1);
-  if (e.key === 'ArrowRight') moveModel(1);
-  if (e.key === 'ArrowUp')   { e.preventDefault(); if (lbShot > 0) { lbShot--; renderLightbox(); } }
-  if (e.key === 'ArrowDown') { e.preventDefault(); const ph = getPhotos(lbList[lbIdx]); if (lbShot < ph.length - 1) { lbShot++; renderLightbox(); } }
+  // ←→ 写真切替 ／ ↑↓ モデル切替
+  if (e.key.startsWith('Arrow')) e.preventDefault();
+  if (e.key === 'ArrowUp')  moveModel(-1);
+  if (e.key === 'ArrowDown') moveModel(1);
+  if (e.key === 'ArrowLeft')   { e.preventDefault(); if (lbShot > 0) { lbShot--; renderLightbox(); } }
+  if (e.key === 'ArrowRight') { e.preventDefault(); const ph = getPhotos(lbList[lbIdx]); if (lbShot < ph.length - 1) { lbShot++; renderLightbox(); } }
 });
 
 renderAllGrids();
