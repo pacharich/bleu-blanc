@@ -379,15 +379,19 @@ const MALES = [
   {
     "id": "kevin",
     "name": "ケビン",
-    "age": "確認中",
+    "age": 24,
     "height": 171,
-    "size": "B 88cm / W 70cm / H 確認中",
-    "shoe": "27cm（確認中）",
+    "size": "B 88cm / W 70cm / H 93cm",
+    "shoe": "27cm",
     "location": "東京都",
     "extra": [
       [
         "裄丈",
         "71cm"
+      ],
+      [
+        "備考",
+        "愛知県内の式場の広告出演歴：なし（本人申告）"
       ]
     ],
     "achievementTitle": "主な出演実績",
