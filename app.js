@@ -76,18 +76,49 @@ const FEMALES = [
     "name": "ヒナ",
     "age": 26,
     "height": "確認中",
-    "size": "確認中",
-    "shoe": "確認中",
-    "clothesSize": "確認中",
-    "location": "確認中",
+    "size": "B 78cm / W 60cm / H 83cm",
+    "shoe": "23.0cm",
+    "clothesSize": "ドレス 7号",
+    "location": "東京都（兵庫県出身）",
     "extra": [
       [
         "モデル歴",
-        "確認中"
+        "2年"
+      ],
+      [
+        "備考",
+        "愛知県内の結婚式場の広告出演歴：なし（本人申告）"
       ]
     ],
     "videos": [
-      "https://www.instagram.com/reel/DHvM8hOAtrs/"
+      "https://www.instagram.com/reel/DHvM8hOAtrs/",
+      "https://www.youtube.com/watch?v=g_txl6Y-qIQ"
+    ],
+    "achievementTitle": "出演実績",
+    "achievementSections": [
+      {
+        "title": "ブライダル",
+        "items": [
+          "オゾワーブルー（高知の結婚式場）",
+          "東京ベイ舞浜ホテル ファーストリゾート（広告・WEBサイト）",
+          "ワタベウェディング（WEBサイト広告）",
+          "mily.m（WEBサイト広告）",
+          "THE DRESS ROOM（WEBサイト広告）",
+          "その他、ドレス撮影など"
+        ]
+      },
+      {
+        "title": "広告・CM",
+        "items": [
+          "KDDI（秋田 TVCM）",
+          "ReFa（WEB動画・広告）",
+          "Galaxy S25 Ultra（WEB動画）",
+          "Pococha（WEB CM）",
+          "クレイツ マカロンカールアイロン（広告ビジュアル）",
+          "ピザハット（採用動画）",
+          "CanCam it girl"
+        ]
+      }
     ]
   },
   {
@@ -482,9 +513,10 @@ const MALES = [
     "name": "ハヤト",
     "age": "確認中",
     "height": 180,
-    "size": "B 94cm / W 76cm / H 93cm",
+    "size": "B 94cm / W 77cm / H 94cm",
     "shoe": "27.5cm",
-    "location": "確認中"
+    "location": "大阪府",
+    "clothesSize": "スーツ Y7"
   }
 ];
 
