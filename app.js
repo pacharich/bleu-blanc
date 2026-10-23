@@ -12,7 +12,7 @@ const PENDING = '確認中';   // プロフィール未着の項目（詳細画�
 // 出演可能日：全員 12/7〜9 の3日間対応可（ヒーロー部に共通表示）
 const AVAILABILITY = {};
 
-// 新婦役（スカイ／ヒナ／エリカ／ゆりな／マイカ）
+// 新婦役（スカイ／ヒナ／エリカ／ゆりな）
 const FEMALES = [
   {
     "id": "sky",
@@ -237,114 +237,6 @@ const FEMALES = [
       "faccie ウェディング",
       "FORTE BRIDAL"
     ]
-  },
-  {
-    "id": "maika",
-    "name": "マイカ",
-    "age": 29,
-    "height": 156,
-    "size": "B 77cm / W 55cm / H 80cm",
-    "shoe": "22.5cm",
-    "hairColor": "ナチュラルブラウン",
-    "exp": "—",
-    "location": "東京都（千葉県出身）",
-    "extra": [
-      [
-        "体重",
-        "40kg"
-      ],
-      [
-        "運転免許",
-        "あり"
-      ],
-      [
-        "備考",
-        "現在ショートボブ（つけ毛でのヘアアレンジ可）"
-      ]
-    ],
-    "videos": [
-      "https://youtube.com/shorts/f3myIYxLkAc",
-      "https://youtube.com/shorts/QnyfSmSqNGI"
-    ],
-    "achievementTitle": "主な出演作",
-    "achievementSections": [
-      {
-        "title": "ドラマ",
-        "items": [
-          "CX 月9「5→9 私に恋したお坊さん」／レギュラー生徒役",
-          "NTV系 深夜ドラマ「ザンビ」",
-          "EX「ハケン占い師アタル」",
-          "TX「牙狼-GARO- 魔戒烈伝」／ヒバナ役"
-        ]
-      },
-      {
-        "title": "映画",
-        "items": [
-          "「トモダチゲーム」／花宮満役",
-          "「海にうかぶ月」／平田美希役",
-          "「志乃ちゃんは自分の名前が言えない」",
-          "「友だちのパパがすき」／友人役"
-        ]
-      },
-      {
-        "title": "バラエティ",
-        "items": [
-          "CX「痛快TVスカッとジャパン」4度出演",
-          "「直撃！シンソウ坂上」〜日航123便からのメッセージ・33年目の真相〜／田淵満役"
-        ]
-      },
-      {
-        "title": "舞台",
-        "items": [
-          "「-Knights- アーサー王と円卓の騎士」／ニムエ役　2年連続"
-        ]
-      },
-      {
-        "title": "CM",
-        "items": [
-          "ソフトバンク",
-          "HONDA（web）",
-          "GungHo"
-        ]
-      },
-      {
-        "title": "MV",
-        "items": [
-          "ASIAN KUNG-FU GENERATION「オペラグラス」／バレリーナ"
-        ]
-      },
-      {
-        "title": "ブライダルモデル",
-        "items": [
-          "THE TOAI"
-        ]
-      },
-      {
-        "title": "SNS広告",
-        "items": [
-          "ハップアール",
-          "EPSON",
-          "サモエドカフェ moffu",
-          "舞子スノーリゾート",
-          "アパマンショップ 信濃土地",
-          "珈琲倶楽部",
-          "KG高等学園",
-          "東京ドームホテル",
-          "アゲルキャリア",
-          "鍛高譚／合同酒精",
-          "牛たん とろろ 麦めし ねぎし",
-          "蒲田矯正歯科"
-        ]
-      },
-      {
-        "title": "SNSショートドラマ",
-        "items": [
-          "僕らの恋はかくれんぼ。",
-          "金融女子が沼すぎる!?",
-          "株式会社 World Change Analysis"
-        ]
-      }
-    ]
   }
 ];
 
@@ -506,6 +398,10 @@ const MALES = [
           "Nikon、LEVI'S、MIKIMOTO、資生堂、WTAPS、New Balance"
         ]
       }
+    ],
+    "videos": [
+      "https://youtube.com/shorts/zx0keu4SBBo",
+      "https://youtube.com/shorts/tD4HBAQvLYI"
     ]
   },
   {
