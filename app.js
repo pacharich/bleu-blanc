@@ -511,12 +511,18 @@ const MALES = [
   {
     "id": "hayato",
     "name": "ハヤト",
-    "age": "確認中",
+    "age": 39,
     "height": 180,
     "size": "B 94cm / W 77cm / H 94cm",
     "shoe": "27.5cm",
     "location": "大阪府",
-    "clothesSize": "スーツ Y7"
+    "clothesSize": "スーツ Y7",
+    "extra": [
+      [
+        "備考",
+        "愛知県内の結婚式場の広告出演歴：なし（直近5年以内・本人申告）"
+      ]
+    ]
   }
 ];
 
