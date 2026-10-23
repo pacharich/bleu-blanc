@@ -79,7 +79,7 @@ const FEMALES = [
     "id": "hina",
     "name": "ヒナ",
     "age": 26,
-    "height": "確認中",
+    "height": 160,
     "size": "B 78cm / W 60cm / H 83cm",
     "shoe": "23.0cm",
     "clothesSize": "ドレス 7号",
