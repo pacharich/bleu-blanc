@@ -244,7 +244,7 @@ const FEMALES = [
   }
 ];
 
-// 新郎役（りょうま／リョウスケ／ケビン／ハヤト）
+// 新郎役（りょうま／リョウスケ／ケビン／ハヤト／RYO／ゆうや）
 const MALES = [
   {
     "id": "ryoma",
@@ -472,6 +472,88 @@ const MALES = [
         ]
       }
     ]
+  },
+  {
+    "id": "ryo",
+    "name": "RYO",
+    "age": 31,
+    "height": 182,
+    "size": "C 98cm / W 85cm / H 96cm",
+    "shoe": "28cm",
+    "location": "大阪府（新潟県出身）",
+    "extra": [
+      [
+        "備考",
+        "愛知県内の結婚式場の広告出演歴：NEST by THE SEA（愛知県知多市）／2026年11月12日撮影予定（ゼクシィ・公式HP・SNS用の広告撮影）"
+      ]
+    ],
+    "videos": [
+      "https://www.instagram.com/reel/DOk9ipYimRf/",
+      "https://www.instagram.com/p/DWS9-DNjOQr/"
+    ],
+    "achievementTitle": "出演実績",
+    "achievementSections": [
+      {
+        "title": "ブライダル",
+        "items": [
+          "The Ritz-Carlton, Fukuoka／ワタベウェディング／STUDIO ARC／創寫舘／studio GAON／クレリア／森の邸宅 彩音／dealsdress ほか、和装・洋装広告に多数出演"
+        ]
+      },
+      {
+        "title": "ホテル",
+        "items": [
+          "グランドプリンスホテル広島／名古屋観光ホテル／雫石プリンスホテル"
+        ]
+      },
+      {
+        "title": "広告・ブランド",
+        "items": [
+          "BULK HOMME／WeSmile／Y-Tag／Elite Grips／ビテラス／mimimi／タグレス／Treva／AttractLite／Raymond Weil／CARIN"
+        ]
+      },
+      {
+        "title": "ランウェイ",
+        "items": [
+          "HARE COLLECTION 2026／ヒトミコレクション ほか"
+        ]
+      },
+      {
+        "title": "俳優",
+        "items": [
+          "舞台『GIFT from GOD』主演／ショートドラマ『プロポーズの台本、貸します。』出演 ほか"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "yuya",
+    "name": "ゆうや",
+    "age": 29,
+    "height": 178,
+    "size": "B 88cm / W 75cm / H 90cm",
+    "shoe": "26.5cm",
+    "location": "大阪府",
+    "extra": [
+      [
+        "備考",
+        "愛知県内の結婚式場の広告出演歴：なし（本人申告）"
+      ]
+    ],
+    "achievementTitle": "出演実績",
+    "achievementSections": [
+      {
+        "title": "ブライダル",
+        "items": [
+          "THE ROYALCLASSIC姫路／リーガロイヤルホテル大阪／帝国ホテル／ANA CROWNE PLAZA 富山／ANA CROWNE PLAZA 広島／THE HILTON PLAZA OSAKA／びわ湖大津プリンスホテル／名古屋プリンスホテル／Centara Grand Hotel Osaka／ホテルグランヴィア京都／三島プラザホテル／IKK WEDDING 水戸／IWAI OMOTESANDO ほか"
+        ]
+      },
+      {
+        "title": "広告",
+        "items": [
+          "Panasonic Homes／りんくうアウトレット／Canopy Osaka／PayPay／OGK技研株式会社／リゲッタカヌー／NEW CLASSIC LAPAN／高橋開発株式会社 ほか"
+        ]
+      }
+    ]
   }
 ];
 
@@ -652,10 +734,10 @@ function renderLightbox() {
       '<div style="font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--accent);margin-bottom:12px;text-transform:uppercase;font-weight:600;">MOVIE ／ イメージ動画</div>' +
       '<div style="display:flex;flex-wrap:wrap;gap:12px;">' +
       m.videos.map(u => {
-        const ig = String(u).match(/instagram\.com\/(?:reel|p)\/([A-Za-z0-9_-]+)/);
+        const ig = String(u).match(/instagram\.com\/(reel|p)\/([A-Za-z0-9_-]+)/);
         if (ig) {
           return `<div style="position:relative;width:240px;max-width:100%;height:430px;border-radius:8px;overflow:hidden;background:#fff;">
-          <iframe src="https://www.instagram.com/reel/${ig[1]}/embed" title="イメージ動画" loading="lazy" scrolling="no"
+          <iframe src="https://www.instagram.com/${ig[1]}/${ig[2]}/embed" title="イメージ動画" loading="lazy" scrolling="no"
             allowtransparency="true" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>
         </div>`;
         }
