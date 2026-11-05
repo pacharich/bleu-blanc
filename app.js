@@ -544,7 +544,7 @@ const MALES = [
       {
         "title": "ブライダル",
         "items": [
-          "THE ROYALCLASSIC姫路／リーガロイヤルホテル大阪／帝国ホテル／ANA CROWNE PLAZA 富山／ANA CROWNE PLAZA 広島／THE HILTON PLAZA OSAKA／びわ湖大津プリンスホテル／名古屋プリンスホテル／Centara Grand Hotel Osaka／ホテルグランヴィア京都／三島プラザホテル／IKK WEDDING 水戸／IWAI OMOTESANDO ほか"
+          "THE ROYALCLASSIC姫路／リーガロイヤルホテル大阪／帝国ホテル／ANA CROWNE PLAZA 富山／ANA CROWNE PLAZA 広島／THE HILTON PLAZA OSAKA／びわ湖大津プリンスホテル／Centara Grand Hotel Osaka／ホテルグランヴィア京都／三島プラザホテル／IKK WEDDING 水戸／IWAI OMOTESANDO ほか"
         ]
       },
       {
@@ -552,7 +552,18 @@ const MALES = [
         "items": [
           "Panasonic Homes／りんくうアウトレット／Canopy Osaka／PayPay／OGK技研株式会社／リゲッタカヌー／NEW CLASSIC LAPAN／高橋開発株式会社 ほか"
         ]
+      },
+      {
+        "title": "その他",
+        "items": [
+          "名古屋プリンスホテル（ホテルPR映像）"
+        ]
       }
+    ],
+    "videos": [
+      "https://youtu.be/uv8Ep2YoNsk",
+      "https://www.instagram.com/reel/DdQyXWQJUXS/",
+      "https://www.instagram.com/reel/DSwya2HkuHC/"
     ]
   }
 ];
